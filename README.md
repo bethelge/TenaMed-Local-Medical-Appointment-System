@@ -1,13 +1,44 @@
 
-# Event Organization System
+# TenaMed – Local Medical Appointment System
 
-## Project Overview
-The **Event Organization System** is cross-platform mobile application designed to streamline the management of events and attendees. The system provides functionalities for creating and managing events, handling attendee registrations, and ensuring secure authentication and authorization processes. The application operates on a local REST API backend, ensuring data security and performance. Key features include:
+TenaMed is a mobile application designed to help users find, book, and manage medical appointments at nearby clinics and hospitals. The system streamlines the appointment scheduling process, reducing long wait times and improving patient access to healthcare providers. Built on a local REST API backend, the system ensures data security, efficient performance, and a smooth user experience.
 
-- **Event Management**: Create, read, update, and delete event information such as title, description, date, time, location, and organizer details.
-- **Attendee Management**: Manage attendee registration and details with full CRUD operations.
-- **Authentication & Authorization**: Secure login and registration system with role-based access control for different types of users (Admin, Organizer, Attendee).
-- **Testing**: Comprehensive widget, unit, and integration tests to ensure system reliability.
+Key Features
+Patient & Appointment Management
+Users can create and manage personal patient profiles.
+
+Full CRUD (Create, Read, Update, Delete) operations for patient records.
+
+Patients can book, reschedule, and cancel appointments with healthcare providers.
+
+Clinic & Hospital Search
+Find nearby clinics and hospitals based on location.
+
+View available doctors and appointment slots.
+
+Filter by specialty, availability, or facility type.
+
+Appointment Scheduling & Management
+Patients can select a date, time, and doctor for an appointment.
+
+Clinics can approve, reschedule, or cancel appointments.
+
+
+Authentication & Authorization
+Secure user registration and login.
+
+Role-based access for patients, doctors, and clinic admins.
+
+Testing & Reliability
+Comprehensive widget, unit, and integration tests to ensure system stability.
+
+Development & Version Control
+Developed using local development tools.
+
+Follows best practices in GitHub version control.
+
+Problem It Solves
+TenaMed helps people easily find and schedule visits to local health centers without the hassle of long wait times, ensuring efficient appointment management and better access to healthcare.
 
 ## Group Members
 
@@ -18,23 +49,4 @@ The **Event Organization System** is cross-platform mobile application designed 
 | Efrata Wolde       | UGR/1245/15  |
 | Meklit Workineh    | UGR/3445/15  |
 | Metaniya Shiferaw  | UGR/8633/15  |
-
-## Project Features
-- **User Authentication**: Registration, login, and role-based access control.
-- **Event Management**:
-  - Create new events with detailed information.
-  - View all events and event details.
-  - Update existing events.
-  - Delete events when necessary.
-- **Attendee Management**:
-  - Register attendees for events.
-  - View attendee lists for specific events.
-  - Update attendee information.
-  - Remove attendees if needed.
-- **Testing**:
-  - Widget Testing
-  - Unit Testing
-  - Integration Testing
-
-This project is developed and maintained using local development tools and follows best practices in version control using GitHub.
 
