@@ -3,42 +3,37 @@
 
 TenaMed is a mobile application designed to help users find, book, and manage medical appointments at nearby clinics and hospitals. The system streamlines the appointment scheduling process, reducing long wait times and improving patient access to healthcare providers. Built on a local REST API backend, the system ensures data security, efficient performance, and a smooth user experience.
 
-Key Features
-Patient & Appointment Management
-Users can create and manage personal patient profiles.
+## Key Features
 
-Full CRUD (Create, Read, Update, Delete) operations for patient records.
+### Patient & Appointment Management
+- Users can create and manage personal patient profiles.
+- Full CRUD (Create, Read, Update, Delete) operations for patient records.
+- Patients can book, reschedule, and cancel appointments with healthcare providers.
 
-Patients can book, reschedule, and cancel appointments with healthcare providers.
+### Clinic & Hospital Search
+- Find nearby clinics and hospitals based on location.
+- View available doctors and appointment slots.
+- Filter by specialty, availability, or facility type.
 
-Clinic & Hospital Search
-Find nearby clinics and hospitals based on location.
+### Appointment Scheduling & Management
+- Patients can select a date, time, and doctor for an appointment.
+- Clinics can approve, reschedule, or cancel appointments.
 
-View available doctors and appointment slots.
+### Authentication & Authorization
+- Secure user registration and login.
+- Role-based access for patients, doctors, and clinic admins.
 
-Filter by specialty, availability, or facility type.
+### Testing & Reliability
+- Comprehensive widget, unit, and integration tests to ensure system stability.
 
-Appointment Scheduling & Management
-Patients can select a date, time, and doctor for an appointment.
+### Development & Version Control
+- Developed using local development tools.
+- Follows best practices in GitHub version control.
 
-Clinics can approve, reschedule, or cancel appointments.
-
-
-Authentication & Authorization
-Secure user registration and login.
-
-Role-based access for patients, doctors, and clinic admins.
-
-Testing & Reliability
-Comprehensive widget, unit, and integration tests to ensure system stability.
-
-Development & Version Control
-Developed using local development tools.
-
-Follows best practices in GitHub version control.
-
-Problem It Solves
+## Problem It Solves
 TenaMed helps people easily find and schedule visits to local health centers without the hassle of long wait times, ensuring efficient appointment management and better access to healthcare.
+
+
 
 ## Group Members
 
