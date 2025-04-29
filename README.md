@@ -1,7 +1,7 @@
 
 # TenaMed – Local Medical Appointment Booking System
 
-TenaMed is a mobile application designed to help users find, book, and manage medical appointments at nearby clinics and hospitals. The system streamlines the appointment scheduling process, reducing long wait times and improving patient access to healthcare providers. Built on a local REST API backend, the system ensures data security, efficient performance, and a smooth user experience.
+TenaMed is a mobile application designed to help users find, book, and manage medical appointments with specialized physicians. The system streamlines the appointment scheduling process, reducing long wait times and improving patient access to healthcare providers. Built on a local REST API backend, the system ensures data security, efficient performance, and a smooth user experience.
 
 ## Key Features
 
@@ -10,10 +10,6 @@ TenaMed is a mobile application designed to help users find, book, and manage me
 - Full CRUD (Create, Read, Update, Delete) operations for patient records.
 - Patients can book, reschedule, and cancel appointments with healthcare providers.
 
-### Clinic & Hospital Search
-- Find nearby clinics and hospitals based on location.
-- View available doctors and appointment slots.
-- Filter by specialty, availability, or facility type.
 
 ### Appointment Scheduling & Management
 - Patients can select a date, time, and doctor for an appointment.
