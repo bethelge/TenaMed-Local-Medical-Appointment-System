@@ -1,7 +1,9 @@
 package com.example.tena.data.repository
 
 
-
+import com.example.tenamed.data.model.BookAppointmentRequest
+import com.example.tenamed.data.model.BookAppointmentResponse
+import com.example.tenamed.data.model.DoctorGetResponse
 import com.example.tenamed.data.model.LoginRequest
 import com.example.tenamed.data.model.LoginResponse
 import com.example.tenamed.data.model.SignupRequest
@@ -30,7 +32,20 @@ class AuthRepository {
         return RetrofitInstance.api.registerPatient(request)
     }
 
-    
+    suspend fun getDoctorById(id: Int): Response<DoctorGetResponse> {
+        return RetrofitInstance.api.getDoctorById(id)
+    }
+
+    suspend fun getAllDoctors(): Response<List<DoctorGetResponse>> {
+        return RetrofitInstance.api.getAllDoctors()
+    }
+    suspend fun bookAppointment(request: BookAppointmentRequest): Response<BookAppointmentResponse> {
+        return RetrofitInstance.api.bookAppointment(request)
+
+    }
+    suspend fun deleteDoctorAccount(userId: Int, token: String): Response<Void> {
+        return RetrofitInstance.api.deleteDoctorAccount(userId, "Bearer $token")
+    }
 
 }
 
