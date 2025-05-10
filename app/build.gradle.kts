@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tena"
+    namespace = "com.example.tenamed"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.tena"
+        applicationId = "com.example.tenamed"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

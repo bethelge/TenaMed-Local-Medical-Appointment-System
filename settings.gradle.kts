@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "tena"
+rootProject.name = "tenamed"
 include(":app")
  
