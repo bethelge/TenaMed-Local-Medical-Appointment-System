@@ -1,4 +1,4 @@
-package com.example.tena.data.network
+package com.example.tenamed.data.network
 
 import android.content.Context
 import android.content.SharedPreferences

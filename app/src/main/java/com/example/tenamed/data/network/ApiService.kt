@@ -1,4 +1,4 @@
-package com.example.tena.data.network
+package com.example.tenamed.data.network
 
 import com.example.tenamed.data.model.BookAppointmentRequest
 import com.example.tenamed.data.model.BookAppointmentResponse

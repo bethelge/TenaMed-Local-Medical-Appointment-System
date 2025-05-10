@@ -1,4 +1,4 @@
-package com.example.tena.data.model
+package com.example.tenamed.data.model
 
 data class DoctorProfileRequest(
     val fullName: String,

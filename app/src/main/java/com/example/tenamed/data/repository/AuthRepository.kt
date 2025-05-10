@@ -1,4 +1,4 @@
-package com.example.tena.data.repository
+package com.example.tenamed.data.repository
 
 
 import com.example.tenamed.data.model.BookAppointmentRequest
