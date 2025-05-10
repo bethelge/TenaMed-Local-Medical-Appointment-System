@@ -1,7 +1,7 @@
 package com.example.tenamed.ui
 
 
-import com.example.tena.data.model.Doctor
+import com.example.tenamed.data.model.Doctor
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.*
 import androidx.navigation.NavController
 import com.example.tena.R
 import androidx.compose.foundation.clickable
-import com.example.tena.data.model.DoctorCard
+import com.example.tenamed.data.model.DoctorCard
 
 
 @Composable

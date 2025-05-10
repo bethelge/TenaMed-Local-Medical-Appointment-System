@@ -18,10 +18,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
-import com.example.tena.data.model.DoctorProfileRequest
-import com.example.tena.data.model.DoctorProfileResponse
-import com.example.tena.data.network.RetrofitInstance
-import com.example.tena.viewmodel.AuthViewModel
+import com.example.tenamed.data.model.DoctorProfileRequest
+import com.example.tenamed.data.model.DoctorProfileResponse
+import com.example.tenamed.data.network.RetrofitInstance
+import com.example.tenamed.viewmodel.AuthViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

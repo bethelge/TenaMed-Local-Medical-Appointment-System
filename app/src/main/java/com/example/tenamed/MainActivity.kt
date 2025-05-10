@@ -1,4 +1,4 @@
-package com.example.tenamed
+package com.example.tena
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -15,7 +15,7 @@ import com.example.tenamed.ui.PatientLandingScreen
 import com.example.tenamed.ui.screen.DoctorSignupScreen
 import com.example.tenamed.ui.theme.TenaTheme
 import com.example.tenamed.ui.DoctorLoginScreen
-//import com.example.tenamed.ui.PostBookingHomeScreen
+//import com.example.tena.ui.PostBookingHomeScreen
 import com.example.tenamed.ui.PatientLoginScreen
 import com.example.tenamed.ui.PatientSignupScreen
 import com.example.tenamed.ui.WelcomeScreen
@@ -24,7 +24,9 @@ import com.example.tenamed.viewmodel.AuthViewModel
 import com.example.tenamed.ui.DoctorDetailScreen
 import com.example.tenamed.ui.PostBookingHomeScreen
 import com.example.tenamed.ui.ProfileScreen
-
+import com.example.tenamed.ui.screen.AppointmentListScreen
+import com.example.tenamed.ui.screen.BookAppointmentPlaceholderScreen
+import com.example.tenamed.ui.screen.BookingSuccessScreen
 import com.example.tenamed.ui.DoctorHomeAfterAppointmentsScreen
 import com.example.tenamed.ui.DoctorProfileScreenAfterSetup
 import com.example.tenamed.data.repository.AuthRepository
@@ -67,13 +69,17 @@ class MainActivity : ComponentActivity() {
                     composable("doctor_detail") {
                         DoctorDetailScreen(navController)
                     }
-
+                    composable("book_placeholder") {
+                        BookAppointmentPlaceholderScreen(navController)
                     }
-
+                    composable("booking_success") {
+                        BookingSuccessScreen(navController)
                     }
-
-
-
+                    composable("post_booking_home") {
+                        PostBookingHomeScreen(navController)
+                    }
+                    composable("appointments") {
+                        AppointmentListScreen(navController)
                     }
                     composable("profile") {
                         ProfileScreen(navController = navController, authRepository = authRepository, context = context)
@@ -84,7 +90,8 @@ class MainActivity : ComponentActivity() {
                     composable("doctor_appointments_list") {
                         DoctorHomeAfterAppointmentsScreen(navController)
                     }
-
+                    composable("doctor_appointment_detail") {
+                        DoctorAppointmentDetailScreen(navController)
                     }
                 }
             }

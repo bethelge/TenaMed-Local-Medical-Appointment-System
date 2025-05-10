@@ -1,4 +1,4 @@
-package com.example.tenamed..ui
+package com.example.tenamed.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -14,7 +14,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.*
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
-import com.example.tena.R
+import com.example.tenamed.R
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CenterAlignedTopAppBar
 @Composable

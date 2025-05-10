@@ -20,8 +20,8 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.NavOptionsBuilder
 import androidx.navigation.PopUpToBuilder
-import com.example.tena.data.model.SignupRequest
-import com.example.tena.data.network.RetrofitInstance
+import com.example.tenamed.data.model.SignupRequest
+import com.example.tenamed.data.network.RetrofitInstance
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

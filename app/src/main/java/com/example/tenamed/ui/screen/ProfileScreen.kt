@@ -1,4 +1,4 @@
-package com.example.tena.ui
+package com.example.tenamed.ui
 
 import android.content.Context
 import androidx.compose.foundation.background
@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.*
 import androidx.navigation.NavController
 import androidx.compose.ui.draw.clip
 import com.example.tenamed.data.repository.AuthRepository
-import com.example.tenamed.data.repository.AuthRepository
+
 import com.example.tenamed.data.network.SharedPrefsManager
 import kotlinx.coroutines.launch
 
