@@ -30,7 +30,9 @@ class AuthRepository {
         return RetrofitInstance.api.registerPatient(request)
     }
 
+    
 
+}
 
 
 
