@@ -1,4 +1,4 @@
-package com.example.tenamed.data.repository
+package com.example.tena.data.repository
 
 
 
@@ -31,8 +31,6 @@ class AuthRepository {
     }
 
 
-
-}
 
 
 

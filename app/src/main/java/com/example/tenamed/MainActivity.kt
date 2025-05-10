@@ -17,6 +17,7 @@ import com.example.tena.ui.PatientSignupScreen
 
 
 import com.example.tena.ui.DoctorLoginScreen
+import com.example.tena.ui.PatientLandingScreen
 import com.example.tena.ui.WelcomeScreen
 import com.example.tenamed.data.repository.AuthRepository
 import com.example.tenamed.ui.screen.DoctorSignupScreen
@@ -48,7 +49,9 @@ class MainActivity : ComponentActivity() {
                     composable("patient_signup") {
                         PatientSignupScreen(navController)
                     }
-                   
+                    composable("patient_landing") {
+                        PatientLandingScreen(navController, authViewModel)
+                    }
 
 
                 }
