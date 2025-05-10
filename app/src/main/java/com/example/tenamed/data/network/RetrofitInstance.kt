@@ -1,8 +1,7 @@
-package com.example.tenamed.data.network
+package com.example.tena.data.network
 
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.Retrofit
-import kotlin.jvm.java
 
 object RetrofitInstance {
     private const val BASE_URL = "http://10.0.2.2:5000"
