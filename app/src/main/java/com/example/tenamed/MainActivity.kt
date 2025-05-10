@@ -1,47 +1,59 @@
-package com.example.tenamed
+package com.example.tena
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.tenamed.ui.theme.TenaMedTheme
+import androidx.compose.ui.platform.LocalContext
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+
+import com.example.tena.ui.PatientLoginScreen
+import com.example.tena.ui.PatientSignupScreen
+
+
+
+
+import com.example.tena.ui.DoctorLoginScreen
+import com.example.tena.ui.WelcomeScreen
+import com.example.tenamed.data.repository.AuthRepository
+import com.example.tenamed.ui.screen.DoctorSignupScreen
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            TenaMedTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+            TenaTheme {
+                val navController = rememberNavController()
+                val authViewModel: AuthViewModel = viewModel()
+                val authRepository = AuthRepository()
+                val context = LocalContext.current
+                NavHost(navController = navController, startDestination = "welcome") {
+                    composable("welcome") {
+                        WelcomeScreen(navController)
+                    }
+                    composable("doctor_login") {
+                        DoctorLoginScreen(navController)
+                    }
+                    composable("doctor_signup") {
+                        DoctorSignupScreen(navController)
+                    }
+                    composable("patient_login") {
+                        PatientLoginScreen(navController)
+                    }
+                    composable("patient_signup") {
+                        PatientSignupScreen(navController)
+                    }
+                   
+
+
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    TenaMedTheme {
-        Greeting("Android")
-    }
-}
