@@ -1,4 +1,4 @@
-package com.example.tena.ui
+package com.example.tenamed.ui
 
 
 import com.example.tena.data.model.Doctor

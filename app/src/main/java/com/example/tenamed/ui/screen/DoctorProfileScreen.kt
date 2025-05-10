@@ -1,5 +1,5 @@
 
-package com.example.tena.ui
+package com.example.tenamed.ui
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState

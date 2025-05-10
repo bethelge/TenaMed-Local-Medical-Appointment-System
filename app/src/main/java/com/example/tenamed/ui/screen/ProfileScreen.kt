@@ -16,8 +16,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.*
 import androidx.navigation.NavController
 import androidx.compose.ui.draw.clip
-import com.example.tena.data.repository.AuthRepository
-import com.example.tena.data.network.SharedPrefsManager
+import com.example.tenamed.data.repository.AuthRepository
+import com.example.tenamed.data.repository.AuthRepository
+import com.example.tenamed.data.network.SharedPrefsManager
 import kotlinx.coroutines.launch
 
 @Composable

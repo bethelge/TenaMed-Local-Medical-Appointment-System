@@ -1,4 +1,4 @@
-package com.example.tena.ui
+package com.example.tenamed.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
