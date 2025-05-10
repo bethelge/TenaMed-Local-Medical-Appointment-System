@@ -1,4 +1,4 @@
-package com.example.tenamed.data.model.network
+package com.example.tenamed.data.network
 
 
 import com.example.tenamed.data.model.LoginRequest

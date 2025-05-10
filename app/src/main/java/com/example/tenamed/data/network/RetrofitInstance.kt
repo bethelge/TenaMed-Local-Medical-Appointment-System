@@ -1,4 +1,4 @@
-package com.example.tenamed.data.model.network
+package com.example.tenamed.data.network
 
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.Retrofit
