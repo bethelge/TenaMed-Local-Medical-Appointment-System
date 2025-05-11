@@ -22,6 +22,21 @@ const getAllDoctors = () => {
 };
 
   
+  // Update doctor profile
+  const updateDoctorProfile = (id, fullName, yearsOfExperience, shortDescription, location, specialty, language, hospital) => {
+    return db.query(
+      `UPDATE doctors SET 
+        full_name = ?, 
+        years_of_experience = ?, 
+        short_description = ?, 
+        location = ?, 
+        specialty = ?, 
+        language = ?, 
+        hospital = ?, 
+        updated_at = CURRENT_TIMESTAMP 
+      WHERE id = ?`,
+      [fullName, yearsOfExperience, shortDescription, location, specialty, language, hospital, id]
+    );
+  };
   
-  
-module.exports = { createDoctor, findDoctorByEmail, findDoctorById, deleteDoctor,  getAllDoctors};
+module.exports = { createDoctor, findDoctorByEmail, findDoctorById, updateDoctorProfile,deleteDoctor,  getAllDoctors};
