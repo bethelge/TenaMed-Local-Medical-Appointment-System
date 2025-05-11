@@ -77,4 +77,5 @@ const loginDoctor = async (req, res) => {
 module.exports = {
   registerDoctor,
   loginDoctor,
+  
 };
