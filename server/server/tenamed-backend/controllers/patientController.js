@@ -65,6 +65,23 @@ const loginPatient = async (req, res) => {
 };
 const { deletePatient } = require('../models/patientModel');
 
+// deletePatientAccount
 
+const deletePatientAccount = async (req, res) => {
+  try {
+    const { id } = req.params;
 
-module.exports = { registerPatient, loginPatient };
+    const result = await deletePatient(id);
+
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ error: 'Patient not found' });
+    }
+
+    res.status(200).json({ message: 'Patient account deleted successfully' });
+  } catch (err) {
+    console.error('Error deleting patient:', err);
+    res.status(500).json({ error: 'Failed to delete patient account' });
+  }
+};
+
+module.exports = { registerPatient, loginPatient,deletePatientAccount };
