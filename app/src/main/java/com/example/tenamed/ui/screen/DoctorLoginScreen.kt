@@ -46,8 +46,8 @@ fun DoctorLoginScreen(navController: NavController, authViewModel: AuthViewModel
     LaunchedEffect(loginResponse) {
         loginResponse?.let { response ->
             navController.navigate("doctor_profile_after_setup") {
-                NavOptionsBuilder.popUpTo("doctor_login") {
-                    PopUpToBuilder.inclusive = true
+               popUpTo("doctor_login") {
+                    inclusive = true
                 } // Prevent going back to login
             }
         }

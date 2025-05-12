@@ -1,4 +1,4 @@
-package com.example.tena
+package com.example.tenamed
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,12 +10,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.tenamed.ui.DoctorAppointmentDetailScreen
-//import com.example.tena.ui.BookAppointmentPlaceholderScreen
 import com.example.tenamed.ui.PatientLandingScreen
 import com.example.tenamed.ui.screen.DoctorSignupScreen
-import com.example.tenamed.ui.theme.TenaTheme
+import com.example.tenamed.ui.theme.TenaMedTheme
 import com.example.tenamed.ui.DoctorLoginScreen
-//import com.example.tena.ui.PostBookingHomeScreen
 import com.example.tenamed.ui.PatientLoginScreen
 import com.example.tenamed.ui.PatientSignupScreen
 import com.example.tenamed.ui.WelcomeScreen
@@ -31,18 +29,19 @@ import com.example.tenamed.ui.DoctorHomeAfterAppointmentsScreen
 import com.example.tenamed.ui.DoctorProfileScreenAfterSetup
 import com.example.tenamed.data.repository.AuthRepository
 
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            TenaTheme {
+            TenaMedTheme { // ✅ Corrected theme name
                 val navController = rememberNavController()
                 val authViewModel: AuthViewModel = viewModel()
                 val authRepository = AuthRepository()
                 val context = LocalContext.current
+
                 NavHost(navController = navController, startDestination = "welcome") {
+
                     composable("welcome") {
                         WelcomeScreen(navController)
                     }
@@ -61,11 +60,9 @@ class MainActivity : ComponentActivity() {
                     composable("patient_landing") {
                         PatientLandingScreen(navController, authViewModel)
                     }
-//
                     composable("doctor_profile") {
                         DoctorProfileScreen(navController, authViewModel)
                     }
-
                     composable("doctor_detail") {
                         DoctorDetailScreen(navController)
                     }
@@ -82,7 +79,11 @@ class MainActivity : ComponentActivity() {
                         AppointmentListScreen(navController)
                     }
                     composable("profile") {
-                        ProfileScreen(navController = navController, authRepository = authRepository, context = context)
+                        ProfileScreen(
+                            navController = navController,
+                            authRepository = authRepository,
+                            context = context
+                        )
                     }
                     composable("doctor_profile_after_setup") {
                         DoctorProfileScreenAfterSetup(navController)
@@ -98,5 +99,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-

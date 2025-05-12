@@ -1,6 +1,6 @@
 package com.example.tenamed.data.model
 
-import com.example.tena.R
+import com.example.tenamed.R
 
 data class Appointment(
     val name: String,

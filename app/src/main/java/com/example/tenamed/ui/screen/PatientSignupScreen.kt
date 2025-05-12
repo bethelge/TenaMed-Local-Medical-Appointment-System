@@ -102,8 +102,8 @@ fun PatientSignupScreen(navController: NavController) {
                             if (response.isSuccessful) {
                                 println("Signup successful: ${response.body()?.message}")
                                 navController.navigate("patient_landing") {
-                                    NavOptionsBuilder.popUpTo("signup") {
-                                        PopUpToBuilder.inclusive = true
+                                    popUpTo("signup") {
+                                        inclusive = true
                                     }
                                 }
                             } else {

@@ -45,7 +45,7 @@ fun PatientLoginScreen(navController: NavController, authViewModel: AuthViewMode
             val token = response.token
             println("Login successful. Token: $token")
             navController.navigate("post_booking_home") {
-                NavOptionsBuilder.popUpTo("patient_login") { PopUpToBuilder.inclusive = true }
+                popUpTo("patient_login") { inclusive = true }
             }
         }
     }

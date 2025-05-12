@@ -13,7 +13,7 @@ class SignupActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             DoctorSignupScreen(
-                navController = TODO()
+                navController = navController
             )
         }
     }
