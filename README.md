@@ -57,7 +57,6 @@ app/
 └── ...
 
 
-
 ## Group Members
 
 | Full Name           | ID           |
