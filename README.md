@@ -28,6 +28,33 @@ TenaMed is a mobile application designed to help users find, book, and manage me
 
 ## Problem It Solves
 TenaMed helps people easily find and schedule visits to local health centers without the hassle of long wait times, ensuring efficient appointment management and better access to healthcare.
+Project Structure - TenaMed
+The TenaMed Local Medical Appointment System Android app is organized in a clean and modular way, separating concerns between UI, data, network, and repository layers.
+
+## 📁 File Structure Overview
+The TenaMed Local Medical Appointment System Android app is organized in a clean and modular way, separating concerns between UI, data, network, and repository layers.
+
+app/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/tenamed/
+│   │   │   ├── data/
+│   │   │   │   ├── model/
+│   │   │   │   ├── network/
+│   │   │   │   └── repository/
+│   │   │   ├── ui/
+│   │   │   │   ├── screen/
+│   │   │   │   └── theme/
+│   │   │   └── MainActivity.kt
+│   │   ├── res/
+│   │   │   ├── drawable/
+│   │   │   ├── mipmap/
+│   │   │   ├── values/
+│   │   │   └── xml/
+│   │   └── AndroidManifest.xml
+├── build.gradle.kts
+├── proguard-rules.pro
+└── ...
 
 
 
