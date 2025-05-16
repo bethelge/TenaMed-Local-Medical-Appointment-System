@@ -33,7 +33,7 @@ The TenaMed Local Medical Appointment System Android app is organized in a clean
 
 ## 📁 File Structure Overview
 The TenaMed Local Medical Appointment System Android app is organized in a clean and modular way, separating concerns between UI, data, network, and repository layers.
-
+```
 app/
 ├── src/
 │   ├── main/
@@ -55,6 +55,7 @@ app/
 ├── build.gradle.kts
 ├── proguard-rules.pro
 └── ...
+```
 
 
 ## Group Members
